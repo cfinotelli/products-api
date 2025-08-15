@@ -1,0 +1,9 @@
+{
+  "name": "products-api",
+  "version": "1.0.0",
+  "description": "products-api",
+  "main": "index.ts",
+  "author": "cfinotelli",
+  "license": "MIT",
+  "private": false
+}
