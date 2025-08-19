@@ -3,3 +3,6 @@
 
 # GET /health
 GET {{baseUrl}}/health
+
+###
+GET {{baseUrl}}/products

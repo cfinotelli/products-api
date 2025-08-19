@@ -6,6 +6,7 @@ import {
   type ZodTypeProvider,
 } from "fastify-type-provider-zod";
 import { environments } from "./env.ts";
+import { listProductsRoute } from "./routes/list-products.ts";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -19,5 +20,7 @@ app.setValidatorCompiler(validatorCompiler);
 app.get("/health", () => {
   return "OK";
 });
+
+app.register(listProductsRoute)
 
 app.listen({ port: environments.PORT })
