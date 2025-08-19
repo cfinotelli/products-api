@@ -4,13 +4,15 @@ services:
 
     image: pgvector/pgvector:pg17
 
+    container_name: products-api
+
     environment:
 
       POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
       POSTGRES_DB: products-api
-      # url to connection
-      # postgresql://docker:docker@products-api:5431/products-api
+      # url to connection local
+      # postgresql://docker:docker@localhost:5431/products-api
 
     ports:
       - "5431:5432"

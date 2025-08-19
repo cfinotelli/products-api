@@ -6,7 +6,7 @@ import {
   type ZodTypeProvider,
 } from "fastify-type-provider-zod";
 import { environments } from "./env.ts";
-import { listProductsRoute } from "./routes/list-products.ts";
+import { listProductsRoute } from "./routes/products/list-products.ts";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
