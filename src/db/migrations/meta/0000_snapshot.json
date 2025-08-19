@@ -1,5 +1,5 @@
 {
-  "id": "4b96cbab-cfce-4d2f-92a8-728a0908b0bf",
+  "id": "f06a469f-6c07-4011-b96d-2385f3a24274",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -29,6 +29,20 @@
         },
         "stock": {
           "name": "stock",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "price": {
+          "name": "price",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "discount": {
+          "name": "discount",
           "type": "integer",
           "primaryKey": false,
           "notNull": true,
