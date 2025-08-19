@@ -9,9 +9,8 @@ services:
       POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
       POSTGRES_DB: products-api
+      # url to connection
+      # postgresql://docker:docker@products-api:5431/products-api
 
     ports:
       - "5431:5432"
-      
-    volumes:
-      - ./docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql
